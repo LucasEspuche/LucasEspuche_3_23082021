@@ -5,7 +5,7 @@ header {
     text-align: center;
     box-shadow: 0px 0px 7px 0px rgba(17, 17, 17, 0.555);  
     img {
-        height: 87px;
+        height: 80px;
         padding: 30px 30px 15px 30px;
     }
 }
@@ -25,20 +25,15 @@ header {
 }
 .hero-banner {
     background-color: $light-background-color;
-    padding: 60px 60px 90px 60px;
+    padding: 50px 30px 70px 30px;
     text-align: center;
-    margin-bottom: 30px;
-    h2 {
-        padding: 0px 50px;
-    }
+    margin-bottom: 20px;
     p {
-        font-size: 1.2rem;
         font-weight: 300;
         padding: 20px 0px 40px 0px;
     }
     a {
         display: inline-block;
-        font-size: 1rem;
         padding: 20px 30px;
         color: white;
         background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
@@ -55,7 +50,7 @@ header {
 }
 .functionalities-container {
     h2 {
-        padding: 40px 40px;
+        padding: 40px 25px;
     }
     ol {
         padding-bottom: 45px;
@@ -65,10 +60,10 @@ header {
             position: relative;
             background-color: $light-background-color;
             font-weight: 500;
-            padding: 40px 40px;
-            margin: 0px 30px 40px 50px;
+            padding: 30px 20px;
+            margin: 0px 25px 30px 40px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
-            border-radius: 30px;
+            border-radius: 25px;
             span {
                 position: absolute;
                 left: -15px;
@@ -79,8 +74,8 @@ header {
                 border-radius: 50%;
             }
             i {
-                font-size: 1.2rem;
-                padding: 0px 40px 0px 10px;
+                font-size: 1.1rem;
+                padding: 0px 25px 0px 20px;
             }
             &:hover {
                 background-color: #F2EBFE;
@@ -93,7 +88,7 @@ header {
 }
 .restaurants-list {
     background-color: $light-background-color;
-    padding: 40px 30px 90px 30px;
+    padding: 25px 25px 80px 25px;
     h2 {
         padding: 40px 0px;
     }
@@ -106,12 +101,12 @@ header {
     &__card {
         position: relative;
         width: auto;
-        height: 365px;
+        height: 250px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
         transform: scale(1);
         transition: .3s ease-in-out;
         overflow: hidden;
-        border-radius: 20px;
+        border-radius: 15px;
         img {
             position: absolute;
             object-fit: cover;
@@ -124,11 +119,12 @@ header {
     }
     span {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 15px;
+        right: 15px;
         color: #3D8B70;
+        font-size: 0.9rem;
         font-weight: 500;
-        padding: 10px 20px;
+        padding: 8px 15px;
         background-color: $tertiary-color;
         border-radius: 3px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
@@ -142,7 +138,7 @@ header {
         flex-direction: row;
         justify-content: space-between;
         background-color: white;
-        padding: 25px 40px 25px 20px;
+        padding: 13px 25px 13px 15px;
     }
     &__details {
         display: flex;
@@ -156,7 +152,7 @@ header {
         display: flex;
         align-items: center;
         i {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: bold;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke: 1.3px black;
@@ -174,21 +170,21 @@ header {
 }
 footer {
     background-color: $dark-background-color;
-    padding: 30px 30px;
+    padding: 30px 25px;
     h3, li, a {
         color: white;
     }
     h3 {
         font-family: 'Shrikhand', sans-serif;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     li {
-        padding-bottom: 15px;
+        padding-bottom: 10px;
         i {
             padding-right: 10px;
         }
         .fa-hands-helping {
-            font-size: 15px;
+            font-size: 12px;
         }
         &:hover {
             text-decoration: underline;
