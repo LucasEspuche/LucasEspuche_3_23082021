@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 0px 7px 0px rgba(17, 17, 17, 0.555);
+}
+header img {
+  height: 87px;
+  padding: 30px 30px 15px 30px;
+}
+
+.location-zone {
+  display: flex;
+  justify-content: center;
+  padding: 25px 25px;
+  background-color: #E8E8E8;
+}
+.location-zone input {
+  all: unset;
+  width: 160px;
+  padding-left: 20px;
+}
+.location-zone input::placeholder {
+  color: black;
+}
+
+.hero-banner {
+  background-color: #F7F7F7;
+  padding: 60px 60px 90px 60px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.hero-banner h2 {
+  padding: 0px 50px;
+}
+.hero-banner p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 20px 0px 40px 0px;
+}
+.hero-banner a {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 20px 30px;
+  color: white;
+  background-image: linear-gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.hero-banner a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.623);
+  opacity: 0.85;
+}
+
+.functionalities-container h2 {
+  padding: 40px 40px;
+}
+.functionalities-container ol {
+  padding-bottom: 45px;
+}
+.functionalities-container ol li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #F7F7F7;
+  font-weight: 500;
+  padding: 40px 40px;
+  margin: 0px 30px 40px 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
+  border-radius: 30px;
+}
+.functionalities-container ol li span {
+  position: absolute;
+  left: -15px;
+  color: white;
+  font-weight: 400;
+  padding: 5px 11px;
+  background-color: #9356DC;
+  border-radius: 50%;
+}
+.functionalities-container ol li i {
+  font-size: 1.2rem;
+  padding: 0px 40px 0px 10px;
+}
+.functionalities-container ol li:hover {
+  background-color: #F2EBFE;
+}
+.functionalities-container ol li:hover i {
+  color: #9356DC;
+}
+
+.restaurants-list {
+  background-color: #F7F7F7;
+  padding: 40px 30px 90px 30px;
+}
+.restaurants-list h2 {
+  padding: 40px 0px;
+}
+.restaurants-list__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 30px;
+}
+.restaurants-list__card {
+  position: relative;
+  width: auto;
+  height: 365px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.restaurants-list__card img {
+  position: absolute;
+  object-fit: cover;
+  height: 70%;
+  width: 100%;
+}
+.restaurants-list__card:hover {
+  transform: scale(1.03);
+}
+.restaurants-list span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #3D8B70;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #99E2D0;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
+}
+.restaurants-list__description {
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 25px 40px 25px 20px;
+}
+.restaurants-list__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.restaurants-list__details p {
+  font-weight: 300;
+}
+.restaurants-list__notation {
+  display: flex;
+  align-items: center;
+}
+.restaurants-list__notation i {
+  font-size: 1.5rem;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.3px black;
+  background-size: 100% 200%;
+  background-position: 0 -100%;
+  background-image: linear-gradient(to top, transparent 45%, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  background-clip: text;
+  transition: all 1s ease;
+}
+.restaurants-list__notation i:hover {
+  background-position: 0 0;
+  -webkit-text-stroke: 0.3px transparent;
+}
+
+footer {
+  background-color: #353535;
+  padding: 30px 30px;
+}
+footer h3, footer li, footer a {
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  padding-bottom: 30px;
+}
+footer li {
+  padding-bottom: 15px;
+}
+footer li i {
+  padding-right: 10px;
+}
+footer li .fa-hands-helping {
+  font-size: 15px;
+}
+footer li:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

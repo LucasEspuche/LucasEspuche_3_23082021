@@ -1,0 +1,11 @@
+{
+  "name": "p3_espuche_lucas",
+  "version": "1.0.0",
+  "description": "Projet 3 OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:styles/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
