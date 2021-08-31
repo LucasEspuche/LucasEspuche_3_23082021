@@ -36,24 +36,24 @@ header img {
   padding: 30px 30px 15px 30px;
 }
 
-.location-zone {
+.location {
   display: flex;
   justify-content: center;
   padding: 25px 25px;
   background-color: #E8E8E8;
 }
-.location-zone input {
+.location input {
   all: unset;
   width: 160px;
   padding-left: 20px;
 }
-.location-zone input::placeholder {
+.location input::placeholder {
   color: black;
 }
 
 .hero-banner {
   background-color: #F7F7F7;
-  padding: 50px 30px 70px 30px;
+  padding: 50px 25px 70px 25px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -77,13 +77,13 @@ header img {
   opacity: 0.85;
 }
 
-.functionalities-container h2 {
+.functionalities h2 {
   padding: 40px 25px;
 }
-.functionalities-container ol {
+.functionalities ol {
   padding-bottom: 45px;
 }
-.functionalities-container ol li {
+.functionalities__step {
   display: flex;
   align-items: center;
   position: relative;
@@ -94,7 +94,7 @@ header img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
   border-radius: 25px;
 }
-.functionalities-container ol li span {
+.functionalities__step span {
   position: absolute;
   left: -15px;
   color: white;
@@ -103,31 +103,31 @@ header img {
   background-color: #9356DC;
   border-radius: 50%;
 }
-.functionalities-container ol li i {
+.functionalities__step i {
   font-size: 1.1rem;
-  padding: 0px 25px 0px 20px;
+  padding: 0px 20px 0px 15px;
 }
-.functionalities-container ol li:hover {
+.functionalities--hilight {
   background-color: #F2EBFE;
 }
-.functionalities-container ol li:hover i {
+.functionalities--hilight i {
   color: #9356DC;
 }
 
-.restaurants-list {
+.restaurants {
   background-color: #F7F7F7;
   padding: 25px 25px 80px 25px;
 }
-.restaurants-list h2 {
+.restaurants h2 {
   padding: 40px 0px;
 }
-.restaurants-list__grid {
+.restaurants__grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
   grid-row-gap: 30px;
 }
-.restaurants-list__card {
+.restaurants__card {
   position: relative;
   width: auto;
   height: 250px;
@@ -137,16 +137,16 @@ header img {
   overflow: hidden;
   border-radius: 15px;
 }
-.restaurants-list__card img {
+.restaurants__card img {
   position: absolute;
   object-fit: cover;
   height: 70%;
   width: 100%;
 }
-.restaurants-list__card:hover {
+.restaurants__card:hover {
   transform: scale(1.03);
 }
-.restaurants-list span {
+.restaurants span {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -158,7 +158,7 @@ header img {
   border-radius: 3px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
 }
-.restaurants-list__description {
+.restaurants__description {
   position: absolute;
   height: 30%;
   width: 100%;
@@ -169,19 +169,19 @@ header img {
   background-color: white;
   padding: 13px 25px 13px 15px;
 }
-.restaurants-list__details {
+.restaurants__details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.restaurants-list__details p {
+.restaurants__details p {
   font-weight: 300;
 }
-.restaurants-list__notation {
+.restaurants__notation {
   display: flex;
   align-items: center;
 }
-.restaurants-list__notation i {
+.restaurants__notation i {
   font-size: 1.4rem;
   font-weight: bold;
   -webkit-text-fill-color: transparent;
@@ -192,7 +192,7 @@ header img {
   background-clip: text;
   transition: all 1s ease;
 }
-.restaurants-list__notation i:hover {
+.restaurants__notation i:hover {
   background-position: 0 0;
   -webkit-text-stroke: 0.3px transparent;
 }
