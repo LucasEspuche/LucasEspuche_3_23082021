@@ -1,10 +1,12 @@
-header {
+.homepage-header {
     position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 0px 7px 0px rgba(17, 17, 17, 0.555);  
     img {
-        height: 80px;
-        padding: 30px 30px 15px 30px;
+        height: 70px;
+        padding: 20px 20px;
     }
 }
 .location {
@@ -14,8 +16,8 @@ header {
     background-color: $medium-background-color;
     input {
         all: unset;
-        width: 160px;
-        padding-left: 20px;
+        width: 140px;
+        padding-left: 15px;
         &::placeholder {
             color: black;
         }
@@ -161,7 +163,7 @@ header {
             transition: all 1s ease;
             &:hover {
                 background-position: 0 0;
-                -webkit-text-stroke: 0.3px transparent;
+                -webkit-text-stroke: 1.3px white;
             }
         }
     }
