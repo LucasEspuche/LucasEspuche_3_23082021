@@ -150,7 +150,7 @@ a {
   padding: 40px 25px;
 }
 .functionalities ol {
-  padding-bottom: 45px;
+  padding: 0px 25px 45px 0px;
 }
 .functionalities__step {
   display: flex;
@@ -159,9 +159,10 @@ a {
   background-color: #F7F7F7;
   font-weight: 500;
   padding: 30px 20px;
-  margin: 0px 25px 30px 40px;
+  margin: 0px 0px 30px 40px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.26);
   border-radius: 25px;
+  flex: 1;
 }
 .functionalities__step span {
   position: absolute;
@@ -290,6 +291,17 @@ footer li a:hover {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 700px) {
+  .functionalities ol {
+    display: flex;
+  }
+
+  .restaurants__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+}
 .menu-header {
   display: flex;
   align-items: center;
