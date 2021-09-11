@@ -273,3 +273,34 @@ footer {
         }
     }
 }
+@media screen and (min-width: 1200px) {
+    .hero-banner {
+        background-image: url("https://images.unsplash.com/photo-1543352634-99a5d50ae78e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .wrapper {
+        max-width: 1300px;
+        margin: auto;
+    }
+    .grid {
+        display: grid; 
+        grid-template-columns: 2fr 4fr; 
+        grid-template-rows: 4fr; 
+        grid-column-gap: 25px;
+        margin-bottom: 80px;
+        .functionalities {
+            grid-area: 1 / 1 / 2 / 2;
+            ol {
+                flex-direction: column;
+            }
+        } 
+        .restaurants {
+            grid-area: 1 / 2 / 2 / 3;
+            background-color: unset;
+            padding-top: 0px;
+        }
+    }
+}
