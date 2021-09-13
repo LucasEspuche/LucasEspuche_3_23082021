@@ -1,0 +1,14 @@
+.location {
+    display: flex;
+    justify-content: center;
+    padding: 25px 25px;
+    background-color: $medium-background-color;
+    input {
+        all: unset;
+        width: 140px;
+        padding-left: 15px;
+        &::placeholder {
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.loader {
+    z-index: 999;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    @include axis-center;
+    background: rgba(255, 255, 255, 0.959);
+    visibility: hidden;
+    animation: loader 3s ease-in;
+    &__dot {
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        display: inline-block;
+        animation: waiting 1s infinite;
+        @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+                animation-delay: $i * 0.1s;       
+            }
+        }
+        @each $name, $color in $animated-gradient {
+            &:nth-child(#{$name}) {
+                 background: #{$color};
+            }	
+        }
+    }
+}

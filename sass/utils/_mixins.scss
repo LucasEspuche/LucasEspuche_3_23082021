@@ -1,0 +1,15 @@
+@mixin axis-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}

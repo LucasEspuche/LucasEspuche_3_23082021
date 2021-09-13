@@ -1,3 +1,5 @@
-@import "./utils/variables";
+@import "./utils/variables", "./utils/mixins", "./utils/keyframes";
 @import "./base/typography", "./base/reset";
+@import "./components/loader";
+@import "./layouts/header", "./layouts/form", "./layouts/footer";
 @import "./pages/homepage", "./pages/restaurants";

@@ -1,6 +1,36 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
+$advertising-color: #3D8B70;
 $light-background-color: #F7F7F7;
 $medium-background-color: #E8E8E8;
 $dark-background-color: #353535;
+$hilight-background-color: #F2EBFE;
+$bottom-gradient: linear-gradient(
+  to bottom, 
+  #ff79da, 
+  #e86edb, 
+  #cf64dc, 
+  #b35cdc, 
+  #9356dc
+);
+$top-gradient: linear-gradient(
+  to top, 
+  transparent 45%, 
+  #ff79da, 
+  #e86edb, 
+  #cf64dc, 
+  #b35cdc, 
+  #9356dc
+);
+$animated-gradient: (
+  1: #9356dc,
+  2: #b35cdc, 
+  3: #cf64dc, 
+  4: #e86edb, 
+  5: #ff79da
+);
+$breakpoints: (
+  tablet: 700px,
+  desktop: 1200px
+);
