@@ -353,6 +353,7 @@ footer li a:hover {
   background-size: 100% 200%;
   background-position: 0 -100%;
   background-image: linear-gradient(to top, transparent 45%, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  -webkit-background-clip: text;
   background-clip: text;
   transition: all 1s ease;
 }
@@ -407,6 +408,7 @@ header a {
   background-size: 100% 200%;
   background-position: 0 -100%;
   background-image: linear-gradient(to top, transparent 45%, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+  -webkit-background-clip: text;
   background-clip: text;
   transition: all 1s ease;
   cursor: pointer;
